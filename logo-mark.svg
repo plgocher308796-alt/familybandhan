@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="FamilyBandhan mark">
+  <rect width="64" height="64" rx="16" fill="#087F7B"/>
+  <!-- two interlocking bandhan (bond) rings -->
+  <circle cx="26" cy="34" r="13" fill="none" stroke="#F8F5EE" stroke-width="4"/>
+  <circle cx="38" cy="30" r="13" fill="none" stroke="#C9A227" stroke-width="4"/>
+  <!-- small heart at the overlap -->
+  <path d="M32 40.5c-3.2-2.6-5.4-4.6-5.4-6.9 0-1.6 1.2-2.8 2.7-2.8 1.1 0 2.1.6 2.7 1.6.6-1 1.6-1.6 2.7-1.6 1.5 0 2.7 1.2 2.7 2.8 0 2.3-2.2 4.3-5.4 6.9z" fill="#F8F5EE"/>
+</svg>
