@@ -2,7 +2,7 @@
   "name": "FamilyBandhan",
   "short_name": "FamilyBandhan",
   "description": "Elder care and personal assistance for parents in Kota.",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#F8F5EE",
   "theme_color": "#087F7B",
