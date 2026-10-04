@@ -82,6 +82,16 @@
 }
 </script>
 <style>
+#cities .cty-wrap{align-items:start}
+#cities details.cty-grp{padding:0;overflow:hidden}
+#cities details.cty-grp summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:18px 20px}
+#cities details.cty-grp summary::-webkit-details-marker{display:none}
+#cities .cty-t{font-family:'Fraunces',serif;font-size:19px;color:#0b4a47;font-weight:500;flex:1}
+#cities .cty-n{font-size:13px;color:#6a8480}
+#cities details.cty-grp summary svg{width:20px;height:20px;color:#087F7B;transition:transform .2s}
+#cities details.cty-grp[open] summary svg{transform:rotate(180deg)}
+#cities details.cty-grp[open] summary{border-bottom:1px dashed #d5e4df}
+#cities details.cty-grp .cty-list{padding:16px 20px 20px}
 
 section[id]{scroll-margin-top:84px}
 .nav-desktop{align-items:center}
@@ -112,20 +122,6 @@ section[id]{scroll-margin-top:84px}
 .nri-steps p{margin:0;font-size:15px;color:#42615d}
 .nri-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 .nri-cta .btn-ghost-x{border-color:#087F7B;color:#087F7B}
-.tm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:34px}
-.tm-card{position:relative;margin:0;background:#fff;border:1px solid rgba(8,127,123,.14);border-radius:22px;padding:30px 24px 22px;box-shadow:0 10px 26px rgba(17,71,51,.08);display:flex;flex-direction:column}
-.tm-card::before{content:"”";position:absolute;right:20px;top:2px;font-family:'Fraunces',serif;font-size:90px;line-height:1;color:rgba(201,162,39,.25)}
-.tm-sample{position:absolute;top:14px;left:20px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#8a6d12;background:#fbf2d2;border-radius:999px;padding:3px 9px}
-.tm-stars{display:flex;gap:2px;margin:16px 0 10px}
-.tm-stars svg{width:18px;height:18px;fill:#C9A227}
-.tm-card blockquote{margin:0 0 18px;font-size:16.5px;line-height:1.6;color:#2b4744;flex:1}
-.tm-card figcaption{display:flex;align-items:center;gap:12px;border-top:1px solid #e6eeea;padding-top:14px}
-.tm-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#087F7B,#18a058);color:#fff;font-weight:700;display:grid;place-items:center}
-.tm-card figcaption b{display:block;color:#0b3d3a}
-.tm-card figcaption small{color:#5b7773}
-.tm-cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#eaf5f2,#f8f5ee);border-radius:20px;padding:22px 26px}
-.tm-cta h3{margin:0 0 4px;font-family:'Fraunces',serif;font-size:22px;color:#0b3d3a;font-weight:500}
-.tm-cta p{margin:0;color:#42615d}
 .rs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:34px;align-items:start}
 .rs-card{background:#fff;border:1px solid rgba(8,127,123,.14);border-radius:20px;box-shadow:0 8px 22px rgba(17,71,51,.07);overflow:hidden}
 .rs-card summary{list-style:none;cursor:pointer;padding:22px 22px 20px;display:block}
@@ -161,7 +157,7 @@ section[id]{scroll-margin-top:84px}
 .cr-apply:hover{text-decoration:underline}
 .cr-foot{text-align:center;margin-top:30px;opacity:.95}
 .cr-foot a{color:#f3d76b;text-decoration:underline}
-@media(max-width:820px){.cr-top{grid-template-columns:1fr}.tm-cta{flex-direction:column;align-items:flex-start}}
+@media(max-width:820px){.cr-top{grid-template-columns:1fr}}
 #cities .cty-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:34px}#cities .cty-grp{background:#fff;border:1px solid rgba(8,127,123,.15);border-radius:18px;padding:20px 20px 22px;box-shadow:0 6px 18px rgba(17,71,51,.06)}#cities .cty-grp h3{margin:0 0 14px;font-size:17px;color:#0b4a47}#cities .cty-list{display:flex;flex-wrap:wrap;gap:8px}#cities .cty{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:999px;background:#f1f6f4;color:#33524f;font-size:14px;font-weight:600}#cities .cty.live{background:#087F7B;color:#fff}#cities .cty.live i{width:8px;height:8px;border-radius:50%;background:#4be08a;display:inline-block}#cities .cty-note{text-align:center;margin-top:28px;font-weight:600}#cities .cty-note a{color:#087F7B;text-decoration:underline}
 .brand .fb-logo{display:block;height:56px;width:auto;max-width:none}.fbrand .fb-logo-foot{display:block;height:64px;width:auto;background:#fff;padding:8px 14px;border-radius:14px}@media(max-width:600px){.brand .fb-logo{height:46px}.fbrand .fb-logo-foot{height:56px}}
 .personal-assistance{margin:14px auto 0;max-width:650px;color:#075c50;font-weight:700}
@@ -175,13 +171,12 @@ section[id]{scroll-margin-top:84px}
 <header class="site-header" id="siteHeader">
   <div class="wrap">
     <div class="bar">
-      <a class="brand" href="#top" aria-label="FamilyBandhan — home"><img class="fb-logo" src="assets/logo.webp" alt="FamilyBandhan — Your Presence, When You Can’t Be There." width="960" height="240"></a>
+      <a class="brand" href="#top" aria-label="FamilyBandhan — home"><img class="fb-logo" src="logo.webp" alt="FamilyBandhan — Your Presence, When You Can’t Be There." width="960" height="240"></a>
       <nav class="nav-desktop" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#how">How it works</a>
         <a href="#plans">Plans</a>
         <a href="#nri">For NRIs</a>
-        <a href="#testimonials">Testimonials</a>
         <details class="nav-more" id="navMore"><summary>More<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
           <div class="nav-more-menu"><a href="#safety">Safety</a><a href="#cities">Cities</a><a href="#resources">Blog &amp; Resources</a><a href="#careers">Careers</a><a href="#faq">FAQ</a></div>
         </details>
@@ -198,7 +193,6 @@ section[id]{scroll-margin-top:84px}
       <a href="#safety">Safety</a>
       <a href="#plans">Plans</a>
       <a href="#nri">For NRIs</a>
-      <a href="#testimonials">Testimonials</a>
       <a href="#cities">Cities</a>
       <a href="#resources">Blog &amp; Resources</a>
       <a href="#careers">Careers</a>
@@ -256,7 +250,7 @@ section[id]{scroll-margin-top:84px}
     <h2 id="galleryTitle">Support that stays by your parents’ side.</h2>
   </div>
   <div class="fb-marquee" role="region" aria-label="FamilyBandhan assistance services photo gallery">
-    <div class="fb-marquee-track"><figure class="fb-marquee-card"><img src="assets/gallery-hospital.webp" alt="FamilyBandhan Hospital checkup & care" loading="lazy"><figcaption>Hospital checkup & care</figcaption></figure><figure class="fb-marquee-card"><img src="assets/gallery-airport.webp" alt="FamilyBandhan Airport assistance" loading="lazy"><figcaption>Airport assistance</figcaption></figure><figure class="fb-marquee-card"><img src="assets/gallery-railway.webp" alt="FamilyBandhan Railway travel support" loading="lazy"><figcaption>Railway travel support</figcaption></figure><figure class="fb-marquee-card"><img src="assets/gallery-bank.webp" alt="FamilyBandhan Bank & document help" loading="lazy"><figcaption>Bank & document help</figcaption></figure><figure class="fb-marquee-card"><img src="assets/gallery-temple.webp" alt="FamilyBandhan Temple visits" loading="lazy"><figcaption>Temple visits</figcaption></figure><figure class="fb-marquee-card"><img src="assets/gallery-family.webp" alt="FamilyBandhan Family functions" loading="lazy"><figcaption>Family functions</figcaption></figure><figure class="fb-marquee-card"><img src="assets/gallery-hospital.webp" alt="FamilyBandhan Hospital checkup & care" loading="lazy"><figcaption>Hospital checkup & care</figcaption></figure><figure class="fb-marquee-card"><img src="assets/gallery-airport.webp" alt="FamilyBandhan Airport assistance" loading="lazy"><figcaption>Airport assistance</figcaption></figure><figure class="fb-marquee-card"><img src="assets/gallery-railway.webp" alt="FamilyBandhan Railway travel support" loading="lazy"><figcaption>Railway travel support</figcaption></figure><figure class="fb-marquee-card"><img src="assets/gallery-bank.webp" alt="FamilyBandhan Bank & document help" loading="lazy"><figcaption>Bank & document help</figcaption></figure><figure class="fb-marquee-card"><img src="assets/gallery-temple.webp" alt="FamilyBandhan Temple visits" loading="lazy"><figcaption>Temple visits</figcaption></figure><figure class="fb-marquee-card"><img src="assets/gallery-family.webp" alt="FamilyBandhan Family functions" loading="lazy"><figcaption>Family functions</figcaption></figure></div>
+    <div class="fb-marquee-track"><figure class="fb-marquee-card"><img src="gallery-hospital.webp" alt="FamilyBandhan Hospital checkup & care" loading="lazy"><figcaption>Hospital checkup & care</figcaption></figure><figure class="fb-marquee-card"><img src="gallery-airport.webp" alt="FamilyBandhan Airport assistance" loading="lazy"><figcaption>Airport assistance</figcaption></figure><figure class="fb-marquee-card"><img src="gallery-railway.webp" alt="FamilyBandhan Railway travel support" loading="lazy"><figcaption>Railway travel support</figcaption></figure><figure class="fb-marquee-card"><img src="gallery-bank.webp" alt="FamilyBandhan Bank & document help" loading="lazy"><figcaption>Bank & document help</figcaption></figure><figure class="fb-marquee-card"><img src="gallery-temple.webp" alt="FamilyBandhan Temple visits" loading="lazy"><figcaption>Temple visits</figcaption></figure><figure class="fb-marquee-card"><img src="gallery-family.webp" alt="FamilyBandhan Family functions" loading="lazy"><figcaption>Family functions</figcaption></figure><figure class="fb-marquee-card"><img src="gallery-hospital.webp" alt="FamilyBandhan Hospital checkup & care" loading="lazy"><figcaption>Hospital checkup & care</figcaption></figure><figure class="fb-marquee-card"><img src="gallery-airport.webp" alt="FamilyBandhan Airport assistance" loading="lazy"><figcaption>Airport assistance</figcaption></figure><figure class="fb-marquee-card"><img src="gallery-railway.webp" alt="FamilyBandhan Railway travel support" loading="lazy"><figcaption>Railway travel support</figcaption></figure><figure class="fb-marquee-card"><img src="gallery-bank.webp" alt="FamilyBandhan Bank & document help" loading="lazy"><figcaption>Bank & document help</figcaption></figure><figure class="fb-marquee-card"><img src="gallery-temple.webp" alt="FamilyBandhan Temple visits" loading="lazy"><figcaption>Temple visits</figcaption></figure><figure class="fb-marquee-card"><img src="gallery-family.webp" alt="FamilyBandhan Family functions" loading="lazy"><figcaption>Family functions</figcaption></figure></div>
   </div>
 </section>
 
@@ -454,28 +448,18 @@ section[id]{scroll-margin-top:84px}
     </div>
   </div></section>
 
-<!-- ===== TESTIMONIALS ===== -->
-<section id="testimonials" aria-labelledby="tmTitle">
-  <div class="wrap sec">
-    <div class="head rv"><p class="eyebrow">Testimonials</p><h2 id="tmTitle">Families sleep better knowing someone is there.</h2><p class="lede">What it feels like when a trusted person is by your parents’ side while you are far away.</p></div>
-    <!-- NOTE: the three reviews below are SAMPLES. Replace each with a real family’s words (with permission) and delete the “Sample review” tag. -->
-    <div class="tm-grid"><figure class="tm-card rv"><span class="tm-sample">Sample review</span><div class="tm-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><blockquote>“I live in Dubai and always worried about Papa’s hospital visits. Now someone goes with him, and I get the reports on WhatsApp the same evening.”</blockquote><figcaption><span class="tm-av" aria-hidden="true">D</span><span><b>Family in Dubai</b><small>Son · parents in Kota</small></span></figcaption></figure><figure class="tm-card rv"><span class="tm-sample">Sample review</span><div class="tm-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><blockquote>“Mummy was nervous about her first flight alone. The companion met her at the gate and stayed until she was settled. She came back smiling.”</blockquote><figcaption><span class="tm-av" aria-hidden="true">B</span><span><b>Family in Bengaluru</b><small>Daughter · mother in Kota</small></span></figcaption></figure><figure class="tm-card rv"><span class="tm-sample">Sample review</span><div class="tm-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><blockquote>“Bank work used to mean a whole day lost. Now it is done properly, with receipts sent to me. It feels like family is helping.”</blockquote><figcaption><span class="tm-av" aria-hidden="true">T</span><span><b>Family in Toronto</b><small>Son · parents in Kota</small></span></figcaption></figure></div>
-    <div class="tm-cta rv"><div><h3>Used FamilyBandhan?</h3><p>Share your experience. It helps other families decide with confidence.</p></div><a class="btn btn-teal" href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20share%20my%20experience." target="_blank" rel="noopener">Share your story</a></div>
-  </div>
-</section>
-
-<!-- ===== CITIES ===== -->
+ <!-- ===== CITIES ===== -->
 <section id="cities" class="alt" aria-labelledby="citiesTitle">
   <div class="wrap sec">
     <div class="head rv"><p class="eyebrow">Cities</p><h2 id="citiesTitle">Starting in Kota, growing across Rajasthan.</h2><p class="lede">We are live in Kota today and opening across all seven divisions of Rajasthan. Tell us your parents’ city and we’ll let you know the moment we reach them.</p></div>
     <div class="cty-wrap">
-<div class="cty-grp"><h3>Jaipur Division</h3><div class="cty-list"><span class="cty">Jaipur</span><span class="cty">Sikar</span><span class="cty">Jhunjhunu</span><span class="cty">Alwar</span><span class="cty">Dausa</span><span class="cty">Kotputli</span><span class="cty">Behror</span><span class="cty">Bhiwadi</span><span class="cty">Chomu</span><span class="cty">Shahpura</span><span class="cty">Neem Ka Thana</span><span class="cty">Khetri</span><span class="cty">Nawalgarh</span><span class="cty">Fatehpur</span><span class="cty">Dudu</span><span class="cty">Khairthal</span><span class="cty">Tijara</span></div></div>
-<div class="cty-grp"><h3>Jodhpur Division</h3><div class="cty-list"><span class="cty">Jodhpur</span><span class="cty">Jaisalmer</span><span class="cty">Barmer</span><span class="cty">Pali</span><span class="cty">Jalore</span><span class="cty">Sirohi</span><span class="cty">Mount Abu</span><span class="cty">Phalodi</span><span class="cty">Balotra</span><span class="cty">Sanchore</span><span class="cty">Bhinmal</span><span class="cty">Sojat</span></div></div>
-<div class="cty-grp"><h3>Udaipur Division</h3><div class="cty-list"><span class="cty">Udaipur</span><span class="cty">Chittorgarh</span><span class="cty">Rajsamand</span><span class="cty">Dungarpur</span><span class="cty">Banswara</span><span class="cty">Pratapgarh</span><span class="cty">Salumbar</span><span class="cty">Nathdwara</span><span class="cty">Kumbhalgarh</span></div></div>
-<div class="cty-grp"><h3>Ajmer Division</h3><div class="cty-list"><span class="cty">Ajmer</span><span class="cty">Pushkar</span><span class="cty">Beawar</span><span class="cty">Kishangarh</span><span class="cty">Nasirabad</span><span class="cty">Bhilwara</span><span class="cty">Tonk</span><span class="cty">Nagaur</span><span class="cty">Didwana</span><span class="cty">Kuchaman City</span><span class="cty">Deoli</span></div></div>
-<div class="cty-grp"><h3>Bikaner Division</h3><div class="cty-list"><span class="cty">Bikaner</span><span class="cty">Sri Ganganagar</span><span class="cty">Hanumangarh</span><span class="cty">Churu</span><span class="cty">Sujangarh</span><span class="cty">Sadulpur</span><span class="cty">Anupgarh</span><span class="cty">Suratgarh</span></div></div>
-<div class="cty-grp"><h3>Bharatpur Division</h3><div class="cty-list"><span class="cty">Bharatpur</span><span class="cty">Dholpur</span><span class="cty">Karauli</span><span class="cty">Sawai Madhopur</span><span class="cty">Hindaun City</span><span class="cty">Deeg</span><span class="cty">Gangapur City</span></div></div>
-<div class="cty-grp"><h3>Kota Division</h3><div class="cty-list"><span class="cty live"><i></i>Kota · Live now</span><span class="cty">Bundi</span><span class="cty">Baran</span><span class="cty">Jhalawar</span><span class="cty">Ramganj Mandi</span><span class="cty">Bhawani Mandi</span><span class="cty">Chhabra</span></div></div>
+<details class="cty-grp"><summary><span class="cty-t">Jaipur Division</span><span class="cty-n">17 cities</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="cty-list"><span class="cty">Jaipur</span><span class="cty">Sikar</span><span class="cty">Jhunjhunu</span><span class="cty">Alwar</span><span class="cty">Dausa</span><span class="cty">Kotputli</span><span class="cty">Behror</span><span class="cty">Bhiwadi</span><span class="cty">Chomu</span><span class="cty">Shahpura</span><span class="cty">Neem Ka Thana</span><span class="cty">Khetri</span><span class="cty">Nawalgarh</span><span class="cty">Fatehpur</span><span class="cty">Dudu</span><span class="cty">Khairthal</span><span class="cty">Tijara</span></div></details>
+<details class="cty-grp"><summary><span class="cty-t">Jodhpur Division</span><span class="cty-n">12 cities</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="cty-list"><span class="cty">Jodhpur</span><span class="cty">Jaisalmer</span><span class="cty">Barmer</span><span class="cty">Pali</span><span class="cty">Jalore</span><span class="cty">Sirohi</span><span class="cty">Mount Abu</span><span class="cty">Phalodi</span><span class="cty">Balotra</span><span class="cty">Sanchore</span><span class="cty">Bhinmal</span><span class="cty">Sojat</span></div></details>
+<details class="cty-grp"><summary><span class="cty-t">Udaipur Division</span><span class="cty-n">9 cities</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="cty-list"><span class="cty">Udaipur</span><span class="cty">Chittorgarh</span><span class="cty">Rajsamand</span><span class="cty">Dungarpur</span><span class="cty">Banswara</span><span class="cty">Pratapgarh</span><span class="cty">Salumbar</span><span class="cty">Nathdwara</span><span class="cty">Kumbhalgarh</span></div></details>
+<details class="cty-grp"><summary><span class="cty-t">Ajmer Division</span><span class="cty-n">11 cities</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="cty-list"><span class="cty">Ajmer</span><span class="cty">Pushkar</span><span class="cty">Beawar</span><span class="cty">Kishangarh</span><span class="cty">Nasirabad</span><span class="cty">Bhilwara</span><span class="cty">Tonk</span><span class="cty">Nagaur</span><span class="cty">Didwana</span><span class="cty">Kuchaman City</span><span class="cty">Deoli</span></div></details>
+<details class="cty-grp"><summary><span class="cty-t">Bikaner Division</span><span class="cty-n">8 cities</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="cty-list"><span class="cty">Bikaner</span><span class="cty">Sri Ganganagar</span><span class="cty">Hanumangarh</span><span class="cty">Churu</span><span class="cty">Sujangarh</span><span class="cty">Sadulpur</span><span class="cty">Anupgarh</span><span class="cty">Suratgarh</span></div></details>
+<details class="cty-grp"><summary><span class="cty-t">Bharatpur Division</span><span class="cty-n">7 cities</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="cty-list"><span class="cty">Bharatpur</span><span class="cty">Dholpur</span><span class="cty">Karauli</span><span class="cty">Sawai Madhopur</span><span class="cty">Hindaun City</span><span class="cty">Deeg</span><span class="cty">Gangapur City</span></div></details>
+<details class="cty-grp" open><summary><span class="cty-t">Kota Division</span><span class="cty-n">7 cities</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="cty-list"><span class="cty live"><i></i>Kota · Live now</span><span class="cty">Bundi</span><span class="cty">Baran</span><span class="cty">Jhalawar</span><span class="cty">Ramganj Mandi</span><span class="cty">Bhawani Mandi</span><span class="cty">Chhabra</span></div></details>
     </div>
     <p class="cty-note">Don’t see your city? <a href="#book">Tell us where your parents live</a> and we’ll prioritise it.</p>
   </div>
@@ -607,12 +591,12 @@ section[id]{scroll-margin-top:84px}
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <div class="fbrand"><img class="fb-logo fb-logo-foot" src="assets/logo.webp" alt="FamilyBandhan — Your Presence, When You Can’t Be There." width="960" height="240" loading="lazy"></div>
+        <div class="fbrand"><img class="fb-logo fb-logo-foot" src="logo.webp" alt="FamilyBandhan — Your Presence, When You Can’t Be There." width="960" height="240" loading="lazy"></div>
         <p style="font-size:15px">Care beyond services, a bond for life.</p>
         <p class="hindi ftag" lang="hi">हर बुज़ुर्ग का अपना परिवार</p>
       </div>
       <div><h4>SERVICES</h4><ul><li><a href="#services">Hospital &amp; doctor visits</a></li><li><a href="#services">Airport assistance</a></li><li><a href="#services">Railway assistance</a></li><li><a href="#services">Temple visits</a></li><li><a href="#services">Bank &amp; documents</a></li><li><a href="#services">Family functions</a></li></ul></div>
-      <div><h4>COMPANY</h4><ul><li><a href="#how">How it works</a></li><li><a href="#plans">Plans &amp; pricing</a></li><li><a href="#nri">For NRIs</a></li><li><a href="#testimonials">Testimonials</a></li><li><a href="#cities">Cities</a></li><li><a href="#safety">Safety</a></li><li><a href="#resources">Blog &amp; Resources</a></li><li><a href="#careers">Careers</a></li><li><a href="#faq">FAQ</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li></ul></div>
+      <div><h4>COMPANY</h4><ul><li><a href="#how">How it works</a></li><li><a href="#plans">Plans &amp; pricing</a></li><li><a href="#nri">For NRIs</a></li><li><a href="#cities">Cities</a></li><li><a href="#safety">Safety</a></li><li><a href="#resources">Blog &amp; Resources</a></li><li><a href="#careers">Careers</a></li><li><a href="#faq">FAQ</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li></ul></div>
       <div><h4>REACH US</h4><ul><li><a href="tel:+917742583308">+91 77425 83308</a></li><li><a href="tel:+917045152050">+91 70451 52050</a></li><li><a href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:p.l.gocher93@gmail.com">p.l.gocher93@gmail.com</a></li><li>Kota, Rajasthan<br>Visits by appointment</li></ul></div>
     </div>
     <div class="fbot"><span>© <span id="year">2026</span> FamilyBandhan · Now serving Kota</span><span>familybandhan.com</span></div>
