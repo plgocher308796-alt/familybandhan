@@ -50,7 +50,7 @@
       "image": "https://familybandhan.com/assets/og-image.jpg",
       "logo": "https://familybandhan.com/assets/icon-512.png",
       "description": "Elder care and personal assistance for parents in Kota: hospital visits, airport and railway assistance, temple visits, bank and document help, and family functions.",
-      "telephone": "+917742583308",
+      "telephone": ["+917742583308","+917045152050"],
       "email": "p.l.gocher93@gmail.com",
       "priceRange": "₹800–₹50,000",
       "address": { "@type": "PostalAddress", "addressLocality": "Kota", "addressRegion": "Rajasthan", "addressCountry": "IN" },
@@ -82,6 +82,87 @@
 }
 </script>
 <style>
+
+section[id]{scroll-margin-top:84px}
+.nav-desktop{align-items:center}
+.nav-more{position:relative}
+.nav-more summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:4px;font:inherit;color:inherit;padding:6px 2px}
+.nav-more summary::-webkit-details-marker{display:none}
+.nav-more summary svg{width:14px;height:14px;transition:transform .2s}
+.nav-more[open] summary svg{transform:rotate(180deg)}
+.nav-more-menu{position:absolute;right:-12px;top:calc(100% + 10px);min-width:200px;background:#fff;border:1px solid rgba(8,127,123,.15);border-radius:14px;box-shadow:0 14px 34px rgba(11,61,58,.16);padding:8px;display:flex;flex-direction:column;z-index:60}
+.nav-more-menu a{padding:10px 14px;border-radius:9px;color:#0b3d3a;white-space:nowrap}
+.nav-more-menu a:hover{background:#eef6f4}
+.nav-mobile{max-height:calc(100vh - 80px);overflow-y:auto}
+.btn-ghost-x{border:1.5px solid rgba(255,255,255,.7);color:#fff;background:transparent}
+.nri-x{margin-top:54px;display:grid;gap:26px}
+.nri-clock{background:#fff;border:1px solid rgba(8,127,123,.15);border-radius:20px;padding:20px;box-shadow:0 8px 22px rgba(17,71,51,.07)}
+.nri-clock-h{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin-bottom:14px}
+.nri-clock-h span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#087F7B;font-weight:700}
+.nri-clock-h b{font-family:'Fraunces',serif;font-size:20px;color:#0b3d3a;font-weight:500}
+.nri-times{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.nri-t{border-radius:14px;background:#f1f6f4;padding:12px 14px}
+.nri-t.home{background:#087F7B;color:#fff}
+.nri-t small{display:block;font-size:12px;opacity:.75}
+.nri-t strong{display:block;font-family:'Fraunces',serif;font-size:22px;font-weight:500;margin-top:2px}
+.nri-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.nri-steps li{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:18px;padding:20px;border:1px solid rgba(8,127,123,.12)}
+.nri-steps li>span{flex:0 0 36px;height:36px;border-radius:50%;background:#C9A227;color:#fff;font-weight:700;display:grid;place-items:center}
+.nri-steps h3{margin:0 0 4px;font-size:17px;color:#0b3d3a}
+.nri-steps p{margin:0;font-size:15px;color:#42615d}
+.nri-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.nri-cta .btn-ghost-x{border-color:#087F7B;color:#087F7B}
+.tm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:34px}
+.tm-card{position:relative;margin:0;background:#fff;border:1px solid rgba(8,127,123,.14);border-radius:22px;padding:30px 24px 22px;box-shadow:0 10px 26px rgba(17,71,51,.08);display:flex;flex-direction:column}
+.tm-card::before{content:"”";position:absolute;right:20px;top:2px;font-family:'Fraunces',serif;font-size:90px;line-height:1;color:rgba(201,162,39,.25)}
+.tm-sample{position:absolute;top:14px;left:20px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#8a6d12;background:#fbf2d2;border-radius:999px;padding:3px 9px}
+.tm-stars{display:flex;gap:2px;margin:16px 0 10px}
+.tm-stars svg{width:18px;height:18px;fill:#C9A227}
+.tm-card blockquote{margin:0 0 18px;font-size:16.5px;line-height:1.6;color:#2b4744;flex:1}
+.tm-card figcaption{display:flex;align-items:center;gap:12px;border-top:1px solid #e6eeea;padding-top:14px}
+.tm-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#087F7B,#18a058);color:#fff;font-weight:700;display:grid;place-items:center}
+.tm-card figcaption b{display:block;color:#0b3d3a}
+.tm-card figcaption small{color:#5b7773}
+.tm-cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#eaf5f2,#f8f5ee);border-radius:20px;padding:22px 26px}
+.tm-cta h3{margin:0 0 4px;font-family:'Fraunces',serif;font-size:22px;color:#0b3d3a;font-weight:500}
+.tm-cta p{margin:0;color:#42615d}
+.rs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:34px;align-items:start}
+.rs-card{background:#fff;border:1px solid rgba(8,127,123,.14);border-radius:20px;box-shadow:0 8px 22px rgba(17,71,51,.07);overflow:hidden}
+.rs-card summary{list-style:none;cursor:pointer;padding:22px 22px 20px;display:block}
+.rs-card summary::-webkit-details-marker{display:none}
+.rs-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#087F7B;background:#e7f4f1;border-radius:999px;padding:4px 10px}
+.rs-min{float:right;font-size:13px;color:#6a8480;margin-top:4px}
+.rs-card h3{margin:14px 0 6px;font-family:'Fraunces',serif;font-size:21px;line-height:1.25;color:#0b3d3a;font-weight:500}
+.rs-card summary p{margin:0 0 14px;color:#4a6965;font-size:15px}
+.rs-more{font-weight:700;color:#087F7B;font-size:14px}
+.rs-more::after{content:" →"}
+.rs-card[open] .rs-more::after{content:" ↑"}
+.rs-card ul{margin:0;padding:4px 22px 22px 40px;color:#2f4b48;line-height:1.6;border-top:1px dashed #d5e4df}
+.rs-card li{margin-top:10px}
+.cr{background:linear-gradient(135deg,#0b3d3a 0%,#087F7B 100%);color:#fff}
+.cr .eyebrow{color:#e8c85a}
+.cr h2,.cr .lede{color:#fff}
+.cr .lede{opacity:.9}
+.cr-top{display:grid;grid-template-columns:1.4fr 1fr;gap:34px;align-items:start}
+.cr-perks{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px}
+.cr-perks li{display:flex;gap:10px;align-items:flex-start}
+.cr-perks svg{flex:0 0 22px;width:22px;height:22px;color:#4be08a;margin-top:2px}
+.cr-box{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:20px;padding:22px 24px}
+.cr-box h3{margin:0 0 10px;font-family:'Fraunces',serif;font-size:21px;font-weight:500}
+.cr-box ul{margin:0;padding-left:20px;line-height:1.8}
+.cr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:36px}
+.cr-role{background:#fff;color:#2b4744;border-radius:20px;padding:22px;display:flex;flex-direction:column;box-shadow:0 12px 28px rgba(0,0,0,.18)}
+.cr-tags{display:flex;gap:6px;flex-wrap:wrap}
+.cr-tags span{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#e7f4f1;color:#087F7B;border-radius:999px;padding:3px 9px}
+.cr-role h3{margin:14px 0 4px;font-family:'Fraunces',serif;font-size:22px;color:#0b3d3a;font-weight:500}
+.cr-sub{margin:0 0 10px;color:#6a8480;font-size:14px}
+.cr-role p{margin:0 0 16px;font-size:15px;line-height:1.55}
+.cr-apply{margin-top:auto;font-weight:700;color:#087F7B;text-decoration:none}
+.cr-apply:hover{text-decoration:underline}
+.cr-foot{text-align:center;margin-top:30px;opacity:.95}
+.cr-foot a{color:#f3d76b;text-decoration:underline}
+@media(max-width:820px){.cr-top{grid-template-columns:1fr}.tm-cta{flex-direction:column;align-items:flex-start}}
+#cities .cty-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:34px}#cities .cty-grp{background:#fff;border:1px solid rgba(8,127,123,.15);border-radius:18px;padding:20px 20px 22px;box-shadow:0 6px 18px rgba(17,71,51,.06)}#cities .cty-grp h3{margin:0 0 14px;font-size:17px;color:#0b4a47}#cities .cty-list{display:flex;flex-wrap:wrap;gap:8px}#cities .cty{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:999px;background:#f1f6f4;color:#33524f;font-size:14px;font-weight:600}#cities .cty.live{background:#087F7B;color:#fff}#cities .cty.live i{width:8px;height:8px;border-radius:50%;background:#4be08a;display:inline-block}#cities .cty-note{text-align:center;margin-top:28px;font-weight:600}#cities .cty-note a{color:#087F7B;text-decoration:underline}
 .brand .fb-logo{display:block;height:56px;width:auto;max-width:none}.fbrand .fb-logo-foot{display:block;height:64px;width:auto;background:#fff;padding:8px 14px;border-radius:14px}@media(max-width:600px){.brand .fb-logo{height:46px}.fbrand .fb-logo-foot{height:56px}}
 .personal-assistance{margin:14px auto 0;max-width:650px;color:#075c50;font-weight:700}
 .care-gallery{padding:64px 0;background:#f7faf7;overflow:hidden}.gallery-head{text-align:center}.gallery-head h2{margin-left:auto;margin-right:auto;max-width:680px}.fb-marquee{width:100%;overflow:hidden;margin-top:30px}.fb-marquee-track{display:flex;width:max-content;gap:18px;animation:fb-scroll-left-to-right 42s linear infinite;will-change:transform}.fb-marquee:hover .fb-marquee-track,.fb-marquee:focus-within .fb-marquee-track{animation-play-state:paused}.fb-marquee-card{position:relative;flex:0 0 auto;width:auto;height:360px;margin:0;overflow:hidden;border-radius:20px;background:#eaf0ec;box-shadow:0 10px 25px rgba(17,71,51,.14)}.fb-marquee-card img{display:block;width:auto;height:100%;max-width:none;object-fit:contain}.fb-marquee-card figcaption{position:absolute;bottom:0;left:0;right:0;padding:30px 14px 14px;color:#fff;background:linear-gradient(transparent,rgba(4,50,39,.86));font-weight:800;font-size:16px}@keyframes fb-scroll-left-to-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}@media(max-width:600px){.care-gallery{padding:48px 0}.fb-marquee-card{flex-basis:auto;width:auto;height:300px}.fb-marquee-track{gap:12px;animation-duration:32s}}@media(prefers-reduced-motion:reduce){.fb-marquee-track{animation-play-state:paused}}
@@ -98,9 +179,12 @@
       <nav class="nav-desktop" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#how">How it works</a>
-        <a href="#safety">Safety</a>
         <a href="#plans">Plans</a>
-        <a href="#faq">FAQ</a>
+        <a href="#nri">For NRIs</a>
+        <a href="#testimonials">Testimonials</a>
+        <details class="nav-more" id="navMore"><summary>More<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <div class="nav-more-menu"><a href="#safety">Safety</a><a href="#cities">Cities</a><a href="#resources">Blog &amp; Resources</a><a href="#careers">Careers</a><a href="#faq">FAQ</a></div>
+        </details>
         <a class="btn btn-teal" href="#book">Book a free visit</a>
       </nav>
       <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
@@ -113,9 +197,14 @@
       <a href="#how">How it works</a>
       <a href="#safety">Safety</a>
       <a href="#plans">Plans</a>
+      <a href="#nri">For NRIs</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#cities">Cities</a>
+      <a href="#resources">Blog &amp; Resources</a>
+      <a href="#careers">Careers</a>
       <a href="#faq">FAQ</a>
       <a class="btn btn-teal btn-full" href="#book">Book a free visit</a>
-      <a class="btn btn-wa btn-full js-wa" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a class="btn btn-wa btn-full" href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener">Chat on WhatsApp</a>
     </nav>
   </div>
 </header>
@@ -133,7 +222,7 @@
     <p class="lede">A trusted local companion for your parents — hospital visits, airport and railway help, temple trips, bank work and family functions. You get a photo update after every visit.</p>
     <div class="cta-row">
       <a class="btn btn-teal btn-lg" href="#book">Book a free visit</a>
-      <a class="btn btn-wa btn-lg js-wa" href="#" target="_blank" rel="noopener">
+      <a class="btn btn-wa btn-lg" href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1-1.6-.7-2.7-1.8-3.4-3.2-.2-.4 0-.5.2-.7l.6-.7c.1-.2.1-.4 0-.6l-.9-2.2c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-1.2 1.2-1.2 2.9-.1 4.6 1.3 2.1 3.1 3.6 5.4 4.4 1.6.6 2.7.5 3.5-.1.5-.4.8-1 .9-1.6.1-.3 0-.5-.2-.7zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
         WhatsApp us
       </a>
@@ -335,7 +424,7 @@
 </section>
 
 <!-- ===== NRI ===== -->
-<section class="alt" aria-labelledby="nriTitle">
+<section id="nri" class="alt" aria-labelledby="nriTitle">
   <div class="wrap sec">
     <div class="nri">
       <div class="rv">
@@ -351,6 +440,65 @@
         <div class="rv"><h3>One person you know</h3><p>Not a helpdesk. Not a new name every month.</p></div>
       </div>
     </div>
+    <div class="nri-x rv">
+      <div class="nri-clock" aria-label="Current time in popular NRI cities">
+        <div class="nri-clock-h"><span>Right now</span><b>Kota &amp; your city, side by side</b></div>
+        <div class="nri-times" id="nriTimes"></div>
+      </div>
+      <ol class="nri-steps">
+        <li><span>1</span><div><h3>Tell us your hours</h3><p>Share your city and the times you’re free. We call you back inside that window.</p></div></li>
+        <li><span>2</span><div><h3>Free first visit, on video</h3><p>We meet your parents at home and set up a video call so you’re there too.</p></div></li>
+        <li><span>3</span><div><h3>Updates after every visit</h3><p>A WhatsApp photo update and a short note, in time for your morning or evening.</p></div></li>
+      </ol>
+      <div class="nri-cta"><a class="btn btn-gold btn-lg" href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20live%20outside%20India%20and%20want%20to%20arrange%20support%20for%20my%20parents." target="_blank" rel="noopener">Talk to us on WhatsApp</a><a class="btn btn-ghost-x btn-lg" href="#book">Request a call-back</a></div>
+    </div>
+  </div></section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials" aria-labelledby="tmTitle">
+  <div class="wrap sec">
+    <div class="head rv"><p class="eyebrow">Testimonials</p><h2 id="tmTitle">Families sleep better knowing someone is there.</h2><p class="lede">What it feels like when a trusted person is by your parents’ side while you are far away.</p></div>
+    <!-- NOTE: the three reviews below are SAMPLES. Replace each with a real family’s words (with permission) and delete the “Sample review” tag. -->
+    <div class="tm-grid"><figure class="tm-card rv"><span class="tm-sample">Sample review</span><div class="tm-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><blockquote>“I live in Dubai and always worried about Papa’s hospital visits. Now someone goes with him, and I get the reports on WhatsApp the same evening.”</blockquote><figcaption><span class="tm-av" aria-hidden="true">D</span><span><b>Family in Dubai</b><small>Son · parents in Kota</small></span></figcaption></figure><figure class="tm-card rv"><span class="tm-sample">Sample review</span><div class="tm-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><blockquote>“Mummy was nervous about her first flight alone. The companion met her at the gate and stayed until she was settled. She came back smiling.”</blockquote><figcaption><span class="tm-av" aria-hidden="true">B</span><span><b>Family in Bengaluru</b><small>Daughter · mother in Kota</small></span></figcaption></figure><figure class="tm-card rv"><span class="tm-sample">Sample review</span><div class="tm-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><blockquote>“Bank work used to mean a whole day lost. Now it is done properly, with receipts sent to me. It feels like family is helping.”</blockquote><figcaption><span class="tm-av" aria-hidden="true">T</span><span><b>Family in Toronto</b><small>Son · parents in Kota</small></span></figcaption></figure></div>
+    <div class="tm-cta rv"><div><h3>Used FamilyBandhan?</h3><p>Share your experience. It helps other families decide with confidence.</p></div><a class="btn btn-teal" href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20share%20my%20experience." target="_blank" rel="noopener">Share your story</a></div>
+  </div>
+</section>
+
+<!-- ===== CITIES ===== -->
+<section id="cities" class="alt" aria-labelledby="citiesTitle">
+  <div class="wrap sec">
+    <div class="head rv"><p class="eyebrow">Cities</p><h2 id="citiesTitle">Starting in Kota, growing across Rajasthan.</h2><p class="lede">We are live in Kota today and opening across all seven divisions of Rajasthan. Tell us your parents’ city and we’ll let you know the moment we reach them.</p></div>
+    <div class="cty-wrap">
+<div class="cty-grp"><h3>Jaipur Division</h3><div class="cty-list"><span class="cty">Jaipur</span><span class="cty">Sikar</span><span class="cty">Jhunjhunu</span><span class="cty">Alwar</span><span class="cty">Dausa</span><span class="cty">Kotputli</span><span class="cty">Behror</span><span class="cty">Bhiwadi</span><span class="cty">Chomu</span><span class="cty">Shahpura</span><span class="cty">Neem Ka Thana</span><span class="cty">Khetri</span><span class="cty">Nawalgarh</span><span class="cty">Fatehpur</span><span class="cty">Dudu</span><span class="cty">Khairthal</span><span class="cty">Tijara</span></div></div>
+<div class="cty-grp"><h3>Jodhpur Division</h3><div class="cty-list"><span class="cty">Jodhpur</span><span class="cty">Jaisalmer</span><span class="cty">Barmer</span><span class="cty">Pali</span><span class="cty">Jalore</span><span class="cty">Sirohi</span><span class="cty">Mount Abu</span><span class="cty">Phalodi</span><span class="cty">Balotra</span><span class="cty">Sanchore</span><span class="cty">Bhinmal</span><span class="cty">Sojat</span></div></div>
+<div class="cty-grp"><h3>Udaipur Division</h3><div class="cty-list"><span class="cty">Udaipur</span><span class="cty">Chittorgarh</span><span class="cty">Rajsamand</span><span class="cty">Dungarpur</span><span class="cty">Banswara</span><span class="cty">Pratapgarh</span><span class="cty">Salumbar</span><span class="cty">Nathdwara</span><span class="cty">Kumbhalgarh</span></div></div>
+<div class="cty-grp"><h3>Ajmer Division</h3><div class="cty-list"><span class="cty">Ajmer</span><span class="cty">Pushkar</span><span class="cty">Beawar</span><span class="cty">Kishangarh</span><span class="cty">Nasirabad</span><span class="cty">Bhilwara</span><span class="cty">Tonk</span><span class="cty">Nagaur</span><span class="cty">Didwana</span><span class="cty">Kuchaman City</span><span class="cty">Deoli</span></div></div>
+<div class="cty-grp"><h3>Bikaner Division</h3><div class="cty-list"><span class="cty">Bikaner</span><span class="cty">Sri Ganganagar</span><span class="cty">Hanumangarh</span><span class="cty">Churu</span><span class="cty">Sujangarh</span><span class="cty">Sadulpur</span><span class="cty">Anupgarh</span><span class="cty">Suratgarh</span></div></div>
+<div class="cty-grp"><h3>Bharatpur Division</h3><div class="cty-list"><span class="cty">Bharatpur</span><span class="cty">Dholpur</span><span class="cty">Karauli</span><span class="cty">Sawai Madhopur</span><span class="cty">Hindaun City</span><span class="cty">Deeg</span><span class="cty">Gangapur City</span></div></div>
+<div class="cty-grp"><h3>Kota Division</h3><div class="cty-list"><span class="cty live"><i></i>Kota · Live now</span><span class="cty">Bundi</span><span class="cty">Baran</span><span class="cty">Jhalawar</span><span class="cty">Ramganj Mandi</span><span class="cty">Bhawani Mandi</span><span class="cty">Chhabra</span></div></div>
+    </div>
+    <p class="cty-note">Don’t see your city? <a href="#book">Tell us where your parents live</a> and we’ll prioritise it.</p>
+  </div>
+</section>
+
+<!-- ===== BLOG & RESOURCES ===== -->
+<section id="resources" class="alt" aria-labelledby="rsTitle">
+  <div class="wrap sec">
+    <div class="head rv"><p class="eyebrow">Blog &amp; Resources</p><h2 id="rsTitle">Practical guides for caring from a distance.</h2><p class="lede">Simple checklists you can use today, written for families looking after parents.</p></div>
+    <div class="rs-grid"><details class="rs-card rv"><summary><span class="rs-tag">Hospital</span><span class="rs-min">3 min read</span><h3>Hospital visit checklist for senior parents</h3><p>Make every doctor visit calmer and more useful.</p><span class="rs-more">Read checklist</span></summary><ul><li>Keep ID, insurance papers and all previous reports in one folder.</li><li>Carry a photo or list of current medicines with their doses.</li><li>Note allergies and past surgeries on one page.</li><li>Write down questions for the doctor before you go.</li><li>Ask for a written summary and photograph every prescription and report.</li><li>Take a companion who can listen, note instructions and share them with family.</li></ul></details><details class="rs-card rv"><summary><span class="rs-tag">Travel</span><span class="rs-min">4 min read</span><h3>Travelling with elderly parents by air or rail</h3><p>Small steps that remove most of the stress.</p><span class="rs-more">Read checklist</span></summary><ul><li>Ask for wheelchair or assistance when booking the ticket.</li><li>Reach the airport or station early, with ID and a printed or saved ticket.</li><li>Keep medicines, water and a snack in hand luggage.</li><li>Share live location and arrival details with family.</li><li>Confirm who is receiving them at the destination.</li><li>Choose comfortable footwear and keep luggage light.</li></ul></details><details class="rs-card rv"><summary><span class="rs-tag">Documents</span><span class="rs-min">3 min read</span><h3>Documents to keep ready for bank work</h3><p>Most delays happen because one paper is missing.</p><span class="rs-more">Read checklist</span></summary><ul><li>Photo ID and address proof, plus PAN where needed.</li><li>Passbook or cheque book and the mobile number linked to the account.</li><li>Updated nominee details and KYC.</li><li>Pensioners: keep the annual life certificate in mind.</li><li>Never share your OTP, PIN or card details with anyone.</li></ul></details><details class="rs-card rv"><summary><span class="rs-tag">Safety</span><span class="rs-min">3 min read</span><h3>Protecting parents from phone and banking fraud</h3><p>A few habits that block most scams.</p><span class="rs-more">Read checklist</span></summary><ul><li>Banks never ask for OTP, PIN or CVV on a call.</li><li>Do not click links or install apps sent by unknown callers.</li><li>Call the bank back on the number printed on the card.</li><li>Set sensible daily transaction limits on the account.</li><li>Report fraud quickly to your bank and the national cyber crime helpline, 1930.</li></ul></details><details class="rs-card rv"><summary><span class="rs-tag">Wellbeing</span><span class="rs-min">4 min read</span><h3>How to talk to parents about accepting help</h3><p>Independence matters. Start there.</p><span class="rs-more">Read checklist</span></summary><ul><li>Begin with their worries, not your own.</li><li>Present help as a convenience, not as a sign of weakness.</li><li>Suggest one trial visit with no commitment.</li><li>Let them choose the time, place and person where possible.</li><li>Keep the same companion so trust can build.</li></ul></details><details class="rs-card rv"><summary><span class="rs-tag">Wellbeing</span><span class="rs-min">3 min read</span><h3>Temple visits and family functions with elders</h3><p>Enjoy the day without the exhaustion.</p><span class="rs-more">Read checklist</span></summary><ul><li>Prefer off-peak hours and ask about ramps and seating.</li><li>Carry water, a cushion and any regular medicines.</li><li>Plan rest breaks; avoid long standing queues.</li><li>Keep a companion close for steps, crowds and hot floors.</li><li>Share photos with family back home as the day goes on.</li></ul></details></div>
+  </div>
+</section>
+
+<!-- ===== CAREERS ===== -->
+<section id="careers" class="cr" aria-labelledby="crTitle">
+  <div class="wrap sec">
+    <div class="cr-top rv">
+      <div><p class="eyebrow">Careers</p><h2 id="crTitle">Join us. Be someone’s family.</h2><p class="lede">We are building a trusted network of caring people across Rajasthan. If you are kind, reliable and good with elders, we would like to meet you.</p>
+      <ul class="cr-perks"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Meaningful work with senior citizens and their families</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Training before your first visit</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Clear schedules and respectful treatment</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Room to grow as we open new cities</li></ul></div>
+      <div class="cr-box"><h3>Who we look for</h3><ul><li>Respectful, patient and honest</li><li>Comfortable with a smartphone and WhatsApp</li><li>Knows the local city well</li><li>Ready for ID and reference verification</li></ul></div>
+    </div>
+    <div class="cr-grid"><article class="cr-role rv"><div class="cr-tags"><span>Field</span><span>Kota</span></div><h3>Care Companion</h3><p class="cr-sub">Kota · Full-time or part-time</p><p>Accompany senior citizens to hospitals, stations, banks and temples, with patience and warmth.</p><a class="cr-apply" href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20apply%20for%20the%20role%20of%20Care%20Companion." target="_blank" rel="noopener">Apply on WhatsApp <span aria-hidden="true">→</span></a></article><article class="cr-role rv"><div class="cr-tags"><span>Operations</span><span>Kota</span></div><h3>Field Coordinator</h3><p class="cr-sub">Kota · Full-time</p><p>Schedule visits, brief companions and make sure every family gets a clear update.</p><a class="cr-apply" href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20apply%20for%20the%20role%20of%20Field%20Coordinator." target="_blank" rel="noopener">Apply on WhatsApp <span aria-hidden="true">→</span></a></article><article class="cr-role rv"><div class="cr-tags"><span>Support</span><span>Remote-friendly</span></div><h3>NRI Support Executive</h3><p class="cr-sub">Kota · Full-time</p><p>Be the friendly voice for families abroad. Good communication in Hindi and English.</p><a class="cr-apply" href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20apply%20for%20the%20role%20of%20NRI%20Support%20Executive." target="_blank" rel="noopener">Apply on WhatsApp <span aria-hidden="true">→</span></a></article><article class="cr-role rv"><div class="cr-tags"><span>Partnership</span><span>Expansion</span></div><h3>City Partner</h3><p class="cr-sub">Across Rajasthan</p><p>Help us open FamilyBandhan in your city and build a trusted local care team.</p><a class="cr-apply" href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20apply%20for%20the%20role%20of%20City%20Partner." target="_blank" rel="noopener">Apply on WhatsApp <span aria-hidden="true">→</span></a></article></div>
+    <p class="cr-foot rv">Don’t see your role? Send your details to <a href="mailto:p.l.gocher93@gmail.com?subject=Career%20at%20FamilyBandhan">p.l.gocher93@gmail.com</a> or WhatsApp <a href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20am%20interested%20in%20working%20with%20you." target="_blank" rel="noopener">+91 77425 83308</a>.</p>
   </div>
 </section>
 
@@ -378,9 +526,10 @@
       <h2 id="bookTitle">Let’s find the right support for your family.</h2>
       <p class="lede">Tell us what your parents need and when. We’ll call you back the same day, then visit them for a free introduction.</p>
       <ul class="contact-list">
-        <li class="is-wa"><a class="js-wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1-1.6-.7-2.7-1.8-3.4-3.2-.2-.4 0-.5.2-.7l.6-.7c.1-.2.1-.4 0-.6l-.9-2.2c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-1.2 1.2-1.2 2.9-.1 4.6 1.3 2.1 3.1 3.6 5.4 4.4 1.6.6 2.7.5 3.5-.1.5-.4.8-1 .9-1.6.1-.3 0-.5-.2-.7zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span>WhatsApp us<small>Fastest — we reply personally</small></span></a></li>
-        <li><a class="js-tel" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.5 1.5a12 12 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2.2 2C10.6 19.4 4.6 13.4 4 5.2A2 2 0 0 1 6 3z"/></svg><span>+91 <span class="js-phone"></span><small>Call, 8 am – 8 pm IST</small></span></a></li>
-        <li><a class="js-mail" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 8l9 6 9-6"/></svg><span><span class="js-email"></span><small>For plans, invoices and paperwork</small></span></a></li>
+        <li class="is-wa"><a href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1-1.6-.7-2.7-1.8-3.4-3.2-.2-.4 0-.5.2-.7l.6-.7c.1-.2.1-.4 0-.6l-.9-2.2c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-1.2 1.2-1.2 2.9-.1 4.6 1.3 2.1 3.1 3.6 5.4 4.4 1.6.6 2.7.5 3.5-.1.5-.4.8-1 .9-1.6.1-.3 0-.5-.2-.7zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg><span>WhatsApp us<small>Fastest — we reply personally</small></span></a></li>
+        <li><a href="tel:+917742583308"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.5 1.5a12 12 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2.2 2C10.6 19.4 4.6 13.4 4 5.2A2 2 0 0 1 6 3z"/></svg><span>+91 77425 83308<small>Call, 8 am – 8 pm IST</small></span></a></li>
+        <li><a href="tel:+917045152050"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.5 1.5a12 12 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2.2 2C10.6 19.4 4.6 13.4 4 5.2A2 2 0 0 1 6 3z"/></svg><span>+91 70451 52050<small>Alternate number · Call, 8 am – 8 pm IST</small></span></a></li>
+        <li><a href="mailto:p.l.gocher93@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 8l9 6 9-6"/></svg><span>p.l.gocher93@gmail.com<small>For plans, invoices and paperwork</small></span></a></li>
       </ul>
       <p class="hours">Serving Kota, Rajasthan · Visits by appointment, 7 days a week.</p>
     </div>
@@ -463,17 +612,54 @@
         <p class="hindi ftag" lang="hi">हर बुज़ुर्ग का अपना परिवार</p>
       </div>
       <div><h4>SERVICES</h4><ul><li><a href="#services">Hospital &amp; doctor visits</a></li><li><a href="#services">Airport assistance</a></li><li><a href="#services">Railway assistance</a></li><li><a href="#services">Temple visits</a></li><li><a href="#services">Bank &amp; documents</a></li><li><a href="#services">Family functions</a></li></ul></div>
-      <div><h4>COMPANY</h4><ul><li><a href="#how">How it works</a></li><li><a href="#plans">Plans &amp; pricing</a></li><li><a href="#safety">Safety</a></li><li><a href="#faq">FAQ</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li></ul></div>
-      <div><h4>REACH US</h4><ul><li><a class="js-tel" href="#">+91 <span class="js-phone"></span></a></li><li><a class="js-wa" href="#" target="_blank" rel="noopener">WhatsApp</a></li><li><a class="js-mail js-email" href="#"></a></li><li>Kota, Rajasthan<br>Visits by appointment</li></ul></div>
+      <div><h4>COMPANY</h4><ul><li><a href="#how">How it works</a></li><li><a href="#plans">Plans &amp; pricing</a></li><li><a href="#nri">For NRIs</a></li><li><a href="#testimonials">Testimonials</a></li><li><a href="#cities">Cities</a></li><li><a href="#safety">Safety</a></li><li><a href="#resources">Blog &amp; Resources</a></li><li><a href="#careers">Careers</a></li><li><a href="#faq">FAQ</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li></ul></div>
+      <div><h4>REACH US</h4><ul><li><a href="tel:+917742583308">+91 77425 83308</a></li><li><a href="tel:+917045152050">+91 70451 52050</a></li><li><a href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener">WhatsApp</a></li><li><a href="mailto:p.l.gocher93@gmail.com">p.l.gocher93@gmail.com</a></li><li>Kota, Rajasthan<br>Visits by appointment</li></ul></div>
     </div>
     <div class="fbot"><span>© <span id="year">2026</span> FamilyBandhan · Now serving Kota</span><span>familybandhan.com</span></div>
   </div>
 </footer>
 
-<a class="wa-float js-wa" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+<a class="wa-float" id="waFloat" href="https://wa.me/917742583308?text=Hello%20FamilyBandhan%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1-1.6-.7-2.7-1.8-3.4-3.2-.2-.4 0-.5.2-.7l.6-.7c.1-.2.1-.4 0-.6l-.9-2.2c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-1.2 1.2-1.2 2.9-.1 4.6 1.3 2.1 3.1 3.6 5.4 4.4 1.6.6 2.7.5 3.5-.1.5-.4.8-1 .9-1.6.1-.3 0-.5-.2-.7zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
 </a>
 
+<script>
+(function(){
+var WA="https://wa.me/917742583308";
+/* More dropdown: close on outside click / link click */
+var more=document.getElementById('navMore');
+if(more){document.addEventListener('click',function(e){if(!more.contains(e.target))more.removeAttribute('open');});
+more.addEventListener('click',function(e){if(e.target.closest('.nav-more-menu a'))more.removeAttribute('open');});}
+/* NRI clocks */
+var zones=[['Kota','Asia/Kolkata',1],['Dubai','Asia/Dubai'],['London','Europe/London'],['New York','America/New_York'],['Toronto','America/Toronto'],['Singapore','Asia/Singapore'],['Sydney','Australia/Sydney']];
+var box=document.getElementById('nriTimes');
+function tick(){if(!box)return;try{box.innerHTML=zones.map(function(z){var t=new Date().toLocaleTimeString('en-IN',{timeZone:z[1],hour:'numeric',minute:'2-digit',hour12:true});return '<div class="nri-t'+(z[2]?' home':'')+'"><small>'+z[0]+(z[2]?' (home)':'')+'</small><strong>'+t.toUpperCase()+'</strong></div>';}).join('');}catch(e){box.parentNode.style.display='none';}}
+tick();setInterval(tick,30000);
+/* Booking form -> WhatsApp (numbers set here) */
+var f=document.getElementById('bookingForm');
+if(f){f.addEventListener('submit',function(e){
+e.preventDefault();e.stopImmediatePropagation();
+var g=function(id){var el=document.getElementById(id);return el?el.value.trim():'';};
+var st=document.getElementById('formStatus');
+if(g('fWebsite'))return;
+var digits=g('fPhone').replace(/\D/g,'');
+var bad=null;
+if(g('fName').length<2)bad=['fName','Please enter your name.'];
+else if(digits.length<10)bad=['fPhone','Enter a valid phone number, e.g. +91 98765 43210.'];
+else if(!g('fService'))bad=['fService','Please choose a service.'];
+else if(!g('fArea'))bad=['fArea','Tell us the area so we can plan the visit.'];
+if(bad){if(st)st.textContent=bad[1];var el=document.getElementById(bad[0]);if(el)el.focus();return;}
+var lines=['Hello FamilyBandhan, I would like to book a free visit.','','Name: '+g('fName'),'Phone: '+g('fPhone'),'Service: '+g('fService'),'Parents’ area in Kota: '+g('fArea')];
+if(g('fDate'))lines.push('Preferred date: '+g('fDate'));
+lines.push('Preferred time: '+g('fTime'));
+if(g('fCity'))lines.push('I live in: '+g('fCity'));
+if(g('fNotes'))lines.push('Notes: '+g('fNotes'));
+if(st)st.textContent='Opening WhatsApp…';
+var url=WA+'?text='+encodeURIComponent(lines.join('\n'));
+var w=window.open(url,'_blank','noopener');if(!w)location.href=url;
+},true);}
+})();
+</script>
 <script src="js/main.js" defer></script>
 </body>
 </html>
