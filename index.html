@@ -161,6 +161,7 @@ section[id]{scroll-margin-top:84px}
 @media(max-width:820px){.cr-top{grid-template-columns:1fr}}
 #cities .cty-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:34px}#cities .cty-grp{background:#fff;border:1px solid rgba(8,127,123,.15);border-radius:18px;padding:20px 20px 22px;box-shadow:0 6px 18px rgba(17,71,51,.06)}#cities .cty-grp h3{margin:0 0 14px;font-size:17px;color:#0b4a47}#cities .cty-list{display:flex;flex-wrap:wrap;gap:8px}#cities .cty{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:999px;background:#f1f6f4;color:#33524f;font-size:14px;font-weight:600}#cities .cty.live{background:#087F7B;color:#fff}#cities .cty.live i{width:8px;height:8px;border-radius:50%;background:#4be08a;display:inline-block}#cities .cty-note{text-align:center;margin-top:28px;font-weight:600}#cities .cty-note a{color:#087F7B;text-decoration:underline}
 .brand .fb-logo{display:block;height:56px;width:auto;max-width:none}.fbrand .fb-logo-foot{display:block;height:64px;width:auto;background:#fff;padding:8px 14px;border-radius:14px}@media(max-width:600px){.brand .fb-logo{height:46px}.fbrand .fb-logo-foot{height:56px}}
+.fb-topline,.fb-topline.hindi{margin:0;padding:calc(7px + env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-right,0px)) 7px max(14px,env(safe-area-inset-left,0px));background:#087F7B;color:#fff;text-align:center;font-size:16px;line-height:1.45}@media(max-width:600px){.fb-topline,.fb-topline.hindi{font-size:15px;padding-top:calc(6px + env(safe-area-inset-top,0px));padding-bottom:6px}}
 .personal-assistance{margin:14px auto 0;max-width:650px;color:#075c50;font-weight:700}
 .care-gallery{padding:64px 0;background:#f7faf7;overflow:hidden}.gallery-head{text-align:center}.gallery-head h2{margin-left:auto;margin-right:auto;max-width:680px}.fb-marquee{width:100%;overflow:hidden;margin-top:30px}.fb-marquee-track{display:flex;width:max-content;gap:18px;animation:fb-scroll-left-to-right 42s linear infinite;will-change:transform}.fb-marquee:hover .fb-marquee-track,.fb-marquee:focus-within .fb-marquee-track{animation-play-state:paused}.fb-marquee-card{position:relative;flex:0 0 auto;width:auto;height:360px;margin:0;overflow:hidden;border-radius:20px;background:#eaf0ec;box-shadow:0 10px 25px rgba(17,71,51,.14)}.fb-marquee-card img{display:block;width:auto;height:100%;max-width:none;object-fit:contain}.fb-marquee-card figcaption{position:absolute;bottom:0;left:0;right:0;padding:30px 14px 14px;color:#fff;background:linear-gradient(transparent,rgba(4,50,39,.86));font-weight:800;font-size:16px}@keyframes fb-scroll-left-to-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}@media(max-width:600px){.care-gallery{padding:48px 0}.fb-marquee-card{flex-basis:auto;width:auto;height:300px}.fb-marquee-track{gap:12px;animation-duration:32s}}@media(prefers-reduced-motion:reduce){.fb-marquee-track{animation-play-state:paused}}
 </style>
@@ -169,10 +170,12 @@ section[id]{scroll-margin-top:84px}
 
 <a class="skip" href="#main">Skip to main content</a>
 
+<div class="fb-topline hindi" lang="hi">बंधन जो दूरी से नहीं टूटता</div>
+
 <header class="site-header" id="siteHeader">
   <div class="wrap">
     <div class="bar">
-      <a class="brand" href="#top" aria-label="FamilyBandhan — home"><img class="fb-logo" src="logo.webp?v=3" alt="FamilyBandhan — Care, Across distance" width="919" height="224"></a>
+      <a class="brand" href="#top" aria-label="FamilyBandhan — home"><img class="fb-logo" src="logo.webp?v=3" alt="FamilyBandhan" width="919" height="224"></a>
       <nav class="nav-desktop" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#how">How it works</a>
@@ -592,10 +595,8 @@ section[id]{scroll-margin-top:84px}
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <div class="fbrand"><img class="fb-logo fb-logo-foot" src="logo.webp?v=3" alt="FamilyBandhan — Care, Across distance" width="919" height="224" loading="lazy"></div>
-        <p style="font-size:15px">Care, Across distance.</p>
+        <div class="fbrand"><img class="fb-logo fb-logo-foot" src="logo.webp?v=3" alt="FamilyBandhan" width="919" height="224" loading="lazy"></div>
         <p class="hindi ftag" lang="hi">बंधन जो दूरी से नहीं टूटता</p>
-        <p class="hindi ftag" lang="hi">हर बुज़ुर्ग का अपना परिवार</p>
       </div>
       <div><h4>SERVICES</h4><ul><li><a href="#services">Hospital &amp; doctor visits</a></li><li><a href="#services">Airport assistance</a></li><li><a href="#services">Railway assistance</a></li><li><a href="#services">Temple visits</a></li><li><a href="#services">Bank &amp; documents</a></li><li><a href="#services">Family functions</a></li></ul></div>
       <div><h4>COMPANY</h4><ul><li><a href="#how">How it works</a></li><li><a href="#plans">Plans &amp; pricing</a></li><li><a href="#nri">For NRIs</a></li><li><a href="#cities">Cities</a></li><li><a href="#safety">Safety</a></li><li><a href="#resources">Blog &amp; Resources</a></li><li><a href="#careers">Careers</a></li><li><a href="#faq">FAQ</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li></ul></div>
